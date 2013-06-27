@@ -1,0 +1,17 @@
+<VirtualHost *:80> 
+    ServerName vagrant.localenv.jp
+    ErrorLog /var/log/httpd/localenv.jp-error_log
+    CustomLog /var/log/httpd/localenv.jp-access_log combined
+                    
+    DocumentRoot /vagrant/codeigniter
+    <Directory /vagrant/codeigniter>
+        Options +Indexes +FollowSymLinks
+        DirectoryIndex index.html index.htm index.php
+        AllowOverride All 
+        Order Deny,Allow
+        Allow from all 
+        EnableMMAP Off 
+        EnableSendfile Off 
+    </Directory>
+                                                                          
+ </VirtualHost>
