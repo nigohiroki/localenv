@@ -1,4 +1,6 @@
-localenv
+開発環境
 ========
 
-local env
+php
+
+version 5.4
