@@ -3,7 +3,3 @@
     action [:discover, :update]
   end
 end
-
-yum_package "PHPUnit" do
-  action :install
-end
