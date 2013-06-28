@@ -2,5 +2,7 @@
 ========
 
 php
+version 5.4.16
 
-version 5.4
+mysql
+version 5.5.32
