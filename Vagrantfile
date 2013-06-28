@@ -10,6 +10,7 @@ Vagrant::Config.run do |config|
     chef.cookbooks_path = "cookbooks"
     chef.add_recipe "selinux::disabled"
     chef.add_recipe "iptables"
+    chef.add_recipe "yum::remi"
     chef.add_recipe "web"
     chef.add_recipe "php"
     chef.add_recipe "mysql"

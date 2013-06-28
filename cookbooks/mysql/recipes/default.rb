@@ -1,4 +1,4 @@
-%w{mysql mysql-server mysql-devel}.each do |package_name|
+%w{mysql-server mysql-devel}.each do |package_name|
   package package_name do
     action :install
     version node['mysql']['version']
