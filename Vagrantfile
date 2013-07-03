@@ -12,6 +12,7 @@ Vagrant::Config.run do |config|
     chef.add_recipe "iptables"
     chef.add_recipe "yum::remi"
     chef.add_recipe "web"
+    chef.add_recipe "git"
     chef.add_recipe "php"
     chef.add_recipe "mysql"
   end
